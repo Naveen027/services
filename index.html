@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E2E</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+
+    <div class="hire">
+        <h5 onclick="openPopup()">We are hiring</h5>
+    </div>
+    
+    <div class="popup" id="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Apply for the Job</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="phone">Phone No.:</label><br>
+            <input type="text" id="phone" name="phone"><br><br>
+            <label for="email">Email ID:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+            <label for="resume">Attachment (Resume):</label><br>
+            <input type="file" id="resume" name="resume"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+
+    <div class="container-fluid">
+        <nav class="navbar">
+            <div class="container-navbar">
+                <div class="navbar-brand">
+                    <img src="/images/Logo.png" alt="Logo">
+                </div>
+                <div class="navbar-toggle" onclick="toggleNavbar()">
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                </div>
+                <ul class="navbar-menu" id="navbarMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+
+
+    <div class="social-icons">
+        <a class="social-icon" href="https://www.facebook.com/">
+          <img src="/images/icons/facebook.jpg" alt="Facebook">
+        </a>
+        <a class="social-icon" href="https://www.instagram.com/">
+          <img src="/images/icons/insta.png" alt="Instagram">
+        </a>
+        <a class="social-icon" href="https://www.linkedin.com/">
+          <img src="/images/icons/linkedin.jpg" alt="LinkedIn">
+        </a>
+      </div>
+      
+
+    <div class="container" id="home">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="homeinfo">
+                    <div class="h4">
+                        <p>We offer innovative solutions for your immediate needs be IT Training, Development &
+                            Deployment.</p>
+                    </div>
+
+                    <div class="h1">
+                        <h1>Transforming the future of IT</h1>
+                    </div>
+
+                    <div class="button1">
+                        DISCOVER OUR SERVICES
+                    </div>
+
+                    <div class="button2">
+                        LEARN MORE
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" id="home2"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="about">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading">
+                    <h3>ABOUT E2E MANAGEMENT SERVICES</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="about1">
+            <div class="col-lg-6 ">
+                <div class="aboutimage1">
+                    <img src="/images/About/About1.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="aboutheading">
+                    <h3>Our History</h3>
+                    <div class="aboutcontent">
+                        <h4>At <strong>E2E</strong> Management, we are your one-stop solution for IT staffing,
+                            cutting-edge software
+                            development, specialized IT training, and government software development projects. We are
+                            committed to driving success through technology and talent. Whether you're a business
+                            looking
+                            for top IT professionals, a government agency in need of custom software solutions, or an
+                            individual seeking IT training, we have you covered.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="about2">
+            <div class="col-lg-6">
+                <div class="aboutheading">
+                    <h3>About Us</h3>
+                    <div class="aboutcontent">
+                        <h4>E2E Management is a dynamic and forward-thinking company dedicated to delivering innovative
+                            solutions for both the private and public sectors. With a mission to bridge the gap between
+                            technology and excellence, we bring together talent, creativity, and expertise to solve
+                            complex challenges. </h4>
+                        <br>
+                        <h4>Our mission is to empower organizations to achieve their goals by providing them with the
+                            best IT talent available. We also aim to empower individuals with the skills and knowledge
+                            they need to thrive in the ever-evolving IT landscape.
+
+                        </h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+                <div class="aboutimage2">
+                    <img src="/images/About/About2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="about3">
+            <div class="col-lg-6">
+                <div class="aboutimage3">
+                    <img src="/images/About/About3.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="aboutheading">
+                    <h3>Our Approach</h3>
+                    <div class="aboutcontent">
+                        <h4>Our multifaceted approach encompasses:</h4>
+                        <ul style="text-align: left;">
+                            <li>
+                                <h4>IT Staffing: Connecting organizations with top-tier IT professionals who possess the
+                                    skills and experience needed to thrive in today's digital world.</h4>
+                            </li>
+                            <li>
+                                <h4>Software Development: Crafting bespoke software solutions that empower businesses
+                                    and government agencies to achieve their goals efficiently and effectively.</h4>
+                            </li>
+                            <li>
+                                <h4>IT Training: Equipping individuals and teams with the knowledge and skills to stay
+                                    at the forefront of the ever-evolving IT landscape.</h4>
+                            </li>
+                            <li>
+                                <h4>Government Projects: Collaborating with government entities to develop tailored
+                                    software solutions that enhance public services and streamline operations.</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="about4">
+            <div class="col-lg-6">
+                <div class="aboutheading">
+                    <h3>WHY CHOOSE E2E MANAGEMENT?</h3>
+                    <div class="aboutcontent">
+                        <ul style="text-align: left;">
+                            <li>
+                                <h4>Experience: We bring a wealth of experience and expertise to every project, ensuring
+                                    successful outcomes.</h4>
+                            </li>
+                            <li>
+                                <h4>Innovation: Our commitment to innovation means you receive cutting-edge technology
+                                    solutions that keep you ahead of the competition.</h4>
+                            </li>
+                            <li>
+                                <h4>Partnership: We view our clients as partners and work collaboratively to achieve
+                                    shared objectives.</h4>
+                            </li>
+                            <li>
+                                <h4>Impact: Our government projects make a real impact by enhancing public services and
+                                    government operations.</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="aboutimage4">
+                    <img src="/images/About/About4.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid" id="service">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading">
+                    <h3>Discover Our Services</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="service1">
+            <div class="col-lg-6">
+                <div class="thumbnail-container">
+                    <img class="thumbnail-image" src="/images/services/service1.png" alt="Thumbnail Image">
+                    <div class="thumbnail-text">
+                        <h3>IT Training:</h3>
+                        <h4>Continuous learning is key to success in the IT field. Our comprehensive IT training
+                            programs (JAVA, .NET, Python, Web development, Business Analytics, Microsoft Power BI,
+                            Artificial
+                            Intelligence) empower individuals and organizations to stay up-to-date with the latest
+                            technologies. Our
+                            courses are designed and taught by industry experts who are passionate about sharing their
+                            knowledge.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="thumbnail-container">
+                    <img class="thumbnail-image" src="/images/services/service2.png" alt="Thumbnail Image">
+                    <div class="thumbnail-text">
+                        <h3>Government IT Projects:</h3>
+                        <h4>Government Software Development Projects: We are proud to partner with government agencies
+                            on software development projects that drive positive change. Our team understands the unique
+                            challenges faced by the public sector and is dedicated to creating innovative solutions that
+                            improve citizen services and operational efficiency.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="row" id="service2">
+            <div class="col-lg-6">
+                <div class="thumbnail-container">
+                    <img class="thumbnail-image" src="/images/services/service3.png" alt="Thumbnail Image">
+                    <div class="thumbnail-text">
+                        <h3>IT & Non-IT Staffing:</h3>
+                        <h4>IT & Non-IT Staffing: Our staffing services are designed to help organizations find the
+                            perfect talent for their needs. Whether you're looking for temporary, permanent, or contract
+                            IT professionals, we have an extensive network of candidates ready to contribute their
+                            expertise to your team.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="thumbnail-container">
+                    <img class="thumbnail-image" src="/images/services/service4.jpg" alt="Thumbnail Image">
+                    <div class="thumbnail-text">
+                        <h3>Software Development:
+                        </h3>
+                        <h4>Software Development: In today's digital age, staying competitive requires cutting-edge
+                            technology solutions. Our IT development services are designed to help businesses of all
+                            sizes transform their ideas into reality. From custom software development to web and mobile
+                            app development, our team of experienced developers can bring your projects to life.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
